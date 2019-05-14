@@ -1,0 +1,10 @@
+This is a sample file for learning Spark
+Spark is from Apache
+I'm thinking this is case sensitive for this test
+Python and Spark work well together
+Though Scala is preferred over Python for Spark
+Another line
+Seventh line
+the quick brown fox jumps over the lazy dog
+the quick brown fox jumps over the lazy dog
+now is the time for us to end this text file
