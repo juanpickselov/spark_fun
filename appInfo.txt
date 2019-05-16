@@ -1,0 +1,1 @@
+spark-submit --conf "spark.driver.extraJavaOptions=-Dderby.system.home=C:/zTmp/spark-warehouse/derby" --py-files table_maker.py table_app.py

@@ -8,7 +8,7 @@ def make_the_table(sprksess):
 
 def fill_the_table(sprksess):
     sprksess.sql("""INSERT INTO TABLE ITEM_LISTING VALUES 
-    ('Learning Spark','book'),
-    ('Fluent Python','book'),
-    ('story cards','index cards')
+    ('Spark: The Definitive Guide','book'),
+    ('Effective Python','book'),
+    ('bugfix cards','index cards')
     """)
