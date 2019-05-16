@@ -1,10 +1,14 @@
 def make_the_table(sprksess):
     print('App Name:', sprksess.conf.get('spark.app.name'))
 
-    sprksess.sql("""CREATE EXTERNAL TABLE IF NOT EXISTS ITEM_DATA(NAME STRING, ITEM STRING)
-    LOCATION 'C:/zData/hivedata/ITEM_DATA'
+    sprksess.sql("""CREATE EXTERNAL TABLE IF NOT EXISTS ITEM_LISTING(NAME STRING, ITEM STRING)
+    LOCATION 'C:/zData/hivedata/ITEM_LISTING'
     """)
+    fill_the_table(sprksess)
 
-
-if __name__ == '__main__':
-    make_the_table()
+def fill_the_table(sprksess):
+    sprksess.sql("""INSERT INTO TABLE ITEM_LISTING VALUES 
+    ('Learning Spark','book'),
+    ('Fluent Python','book'),
+    ('story cards','index cards')
+    """)
